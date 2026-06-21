@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Revision Notes — 106 Interview Questions | Rising Brain Sheet</title>
+  <meta name="description" content="Animated, interview-focused revision notes for 106 important DSA questions. Includes intuition, visual walkthroughs, optimal Java solutions, complexities, common mistakes, and 30-second memory tricks." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- Header -->
+  <header id="main-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">DSA <span class="accent">Revision</span> Notes</span>
+      </div>
+      <nav id="main-nav">
+        <button class="nav-btn active" data-filter="all">All (106)</button>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box" id="search-box">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <input type="text" id="search-input" placeholder="Search questions..." autocomplete="off" />
+        </div>
+        <div class="progress-ring" id="progress-ring" title="Questions reviewed">
+          <svg viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="17" class="ring-bg"/>
+            <circle cx="20" cy="20" r="17" class="ring-fill" id="ring-fill"/>
+          </svg>
+          <span class="ring-text" id="ring-text">0%</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Topic Navigation Sidebar -->
+  <aside id="sidebar">
+    <div class="sidebar-title">Topics</div>
+    <ul id="topic-list"></ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <h1 class="hero-title">
+        <span class="hero-line">Master 106 DSA Questions</span>
+        <span class="hero-sub">Interview-Focused • Animated • Topic-Wise</span>
+      </h1>
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num" id="stat-topics">0</span>
+          <span class="stat-label">Topics</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-questions">106</span>
+          <span class="stat-label">Questions</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" id="stat-patterns">0</span>
+          <span class="stat-label">Patterns</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="questions-container"></section>
+  </main>
+
+  <!-- Question Detail Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="question-modal">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
